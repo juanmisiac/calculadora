@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #21D4FD;
+    background-image: linear-gradient(to right, #21D4FD 0%, #B721FF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .75rem;
+
+    width: 350px;
+    height: 450px;
+    max-width: 100%;
+
+    background-color: #4655ac;
+    padding: 32px;
+    border-radius: 2rem;
+    color: white;
+    box-shadow: 0px 0px 20px white;
+}
+
+#pantalla{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35407e;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.17);
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.btn{
+    background-color: #35407e;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.17);
+    transition: all .15s ease;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(1.1);
+}
+
+    /*---OPERADORES---*/
+
+#sumar{
+    background-color: #ff8800;
+}
+#resta{
+    background-color: #ff8800;
+}
+#multi{
+    background-color: #ff8800;
+}
+#divid{
+    background-color: #ff8800;
+}
+
+    /*---EN DUDA---*/
+
+/* 
+#resolver{
+    background-color: #ca3b30;
+}
+#reinicio{
+    background-color: #ca3b30;
+}
+*/
